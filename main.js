@@ -17,19 +17,11 @@ propiedad() {
     const Texto = document.createTextNode(`El juego es ${this.nombre} , y la descripcion es ${this.descripcion} .`);
     dlgBox.append(Texto);
     
-    //dlgBox.classList.add("container-items");
+  
     document.body.append(dlgBox);
-   
-
-//alert("El Juego es: " + this.nombre + " , y la descripcion es: " + this.descripcion);
+ 
 }
 }
-
-//
-
-
-
-
 
 
 const juego1 = new Juego("Counter Strike Global Offensive", "FPS", "Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionero cuando salió hace más de 20 años. CS:GO incluye nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de Counter-Strike (de_dust2, etc.).", 0) ;
@@ -51,9 +43,7 @@ const juego16 = new Juego("Sea of Thieves", "Aventura", "Sea of Thieves ofrece l
 const juego17 = new Juego("Destiny 2", "FPS", "Destiny 2 es un MMO de acción con un mundo único y dinámico al que tus amigos y tú os podéis unir en cualquier momento y desde cualquier lugar de forma totalmente gratuita.", 0);
 const juego18 = new Juego("Stray", "Aventura", "Perdido, solo y separado de su familia, un gato callejero debe desentrañar un antiguo misterio para escapar de una ciberciudad olvidada y encontrar el camino a casa.", 519);
 
-//videojuegos.push(juego1, juego2, juego3, juego4, juego5, juego6, juego7, juego8, juego9, juego10, juego11, juego12, juego13, juego14, juego15, juego16, juego17, juego18);
-//const nombre = prompt("Ingrese su nombre");
-//const apellido = prompt("Ingrese su apellido");
+
 
 //FUNCION PARA CREACION DE USUARIO.
 function usuario(){ 
@@ -65,7 +55,6 @@ if((nombre != "") && (apellido != "")) {
     console.log("El usuario de la pagina es " + nombre + " " + apellido );
 }
 
-//usuario();
 
 //FUNCION PARA VALIDAR EDAD DE LA PERSONA QUE INGRESE A LA PAGINA.
 
@@ -79,7 +68,7 @@ function validarEdad() {
     console.log("La edad del usuario es de " + edad + " años.");
 };
 
-//validarEdad();
+
 
 //FUNCION CON OPCIONES PARA QUE EL USUARIO PUEDA ELEGIR QUE QUIERE REALIZAR
 
@@ -334,20 +323,20 @@ function filtrarporCategoria() {
 
 
     const videojuegosFPS = videojuegos.filter( (videojuegos) => videojuegos.categoria === "FPS");
-    //alert("First-Personal Shooter: \n"+devolverNombres(videojuegosFPS).join('\n'));
+    
     
     const videojuegosEstrategia = videojuegos.filter( (videojuegos) => videojuegos.categoria === "Estrategia");
-    //alert("Estrategia: \n"+devolverNombres(videojuegosEstrategia).join('\n'));
+    
     
     
     const videojuegosDeportes = videojuegos.filter( (videojuegos) => videojuegos.categoria === "Deportes");
-    //alert("Deportes: \n"+devolverNombres(videojuegosDeportes).join('\n'));
+    
     
     const videojuegosAventura = videojuegos.filter( (videojuegos) => videojuegos.categoria === "Aventura");
-    //alert("Aventura: \n"+devolverNombres(videojuegosAventura).join('\n'));
+    
     
     const videojuegosSupervivencia = videojuegos.filter( (videojuegos) => videojuegos.categoria === "Supervivencia");
-    //alert("Supervivencia: \n"+devolverNombres(videojuegosSupervivencia).join('\n'));
+    
     
     let opcionCategoria = true;
     
